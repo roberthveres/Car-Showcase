@@ -1,17 +1,16 @@
 "use client";
 
 import Image from "next/image";
-
 import CustomButton from "./CustomButton";
 
 const Hero = () => {
-const handleScroll = () => {
-
-}
+  const handleScroll = () => {
+    // A handleScroll függvény megvalósítása
+  };
 
   return (
     <div className="hero">
-      <div className="flex-1 pt-36 padding-x ">
+      <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
           Find, book, or rent a car -- quickly and easily!
         </h1>
@@ -25,6 +24,7 @@ const handleScroll = () => {
           title="Explore Cars"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
+          btnType="button" // Hozzáadásra kerül a btnType prop
         />
       </div>
       <div className="hero__image-container">
@@ -35,6 +35,6 @@ const handleScroll = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
